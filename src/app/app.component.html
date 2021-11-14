@@ -1,9 +1,14 @@
 <mat-toolbar>
   <div class="header">{{title}}</div>
   <div class="button-box">
-    <button [ngClass]="'button-item'" *ngFor="let button of buttons; let i = index;" mat-raised-button
-      routerLink="home-component" routerLinkActive="active">
-      {{button}}
+    <button [ngClass]="'button-item'" mat-raised-button routerLink="/MyHomies" routerLinkActive="active">
+      My Homies
+    </button>
+    <button [ngClass]="'button-item'" mat-raised-button routerLink="/AboutMe" routerLinkActive="active">
+      About Me
+    </button>
+    <button [ngClass]="'button-item'" mat-raised-button routerLink="/Home" routerLinkActive="active">
+      Home
     </button>
   </div>
 </mat-toolbar>

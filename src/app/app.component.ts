@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ContentChild } from '@angular/core';
+import { HomeComponent } from './home/home.component';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -6,6 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'John\'s Portfolio';
-  buttons = ['My Homies', 'About', 'Home'];
-
 }
