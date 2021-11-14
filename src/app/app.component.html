@@ -1,8 +1,9 @@
 <mat-toolbar>
   <div class="header">{{title}}</div>
   <div class="button-box">
-    <button [ngClass]="'button-item'" *ngFor="let button of buttons; let i = index;" mat-raised-button>
-      <a routerLink="home-component" routerLinkActive="active">{{button}}</a>
+    <button [ngClass]="'button-item'" *ngFor="let button of buttons; let i = index;" mat-raised-button
+      routerLink="home-component" routerLinkActive="active">
+      {{button}}
     </button>
   </div>
 </mat-toolbar>
