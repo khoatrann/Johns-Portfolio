@@ -1,15 +1,18 @@
 .mat-toolbar{
+    padding: 4rem;
     background-color: blueviolet;
     color: white;
 }
 
 .header{
-    padding-left: 10%;
-    padding-right: 10%;
+    padding: 1rem;
+    font-size: 30px;
+    border: 1px solid lightblue;
+    border-radius: 12px;
 }
 
 .header-box{
-    padding:80%;
+    padding: 80%;
 }
 
 .buttons{
@@ -27,11 +30,13 @@ section {
   min-width: 120px;
 }
 
-.button-box .mat-button-base {
-  margin: 2%;
-  width: 40% !important;
+.button-box {
+  margin-right: 1rem;
+  width: 100%;
 }
 
-.button-header {
+.button-item {
     color: blueviolet;
+    float: right;
+    margin: 2px;
 }
