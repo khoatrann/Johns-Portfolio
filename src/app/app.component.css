@@ -4,7 +4,8 @@
 }
 
 .header{
-    float:left;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .header-box{
@@ -26,25 +27,11 @@ section {
   min-width: 120px;
 }
 
-.example-button-row {
-  display: table-cell;
-  width: 490px;
-  float: right;
-  position: relative;
+.button-box .mat-button-base {
+  margin: 2%;
+  width: 40% !important;
 }
 
-.example-button-row .mat-button-base {
-  margin: 8px 8px 8px 0;
-}
-
-.example-flex-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.example-button-container {
-  display: flex;
-  justify-content: center;
-  width: 120px;
+.button-header {
+    color: blueviolet;
 }
