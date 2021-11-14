@@ -1,20 +1,10 @@
 <mat-toolbar>
   <div class="Header">{{title}}</div>
   <section>
-    <div class="example-label">Basic</div>
     <div class="example-button-row">
       <button *ngFor="let button of buttons; let i = index" mat-raised-button>
         {{button}}
       </button>
     </div>
   </section>
-  <div class="header-box">
-    <div class="example-button-row">
-      <div *ngFor="let button of buttons; let i = index" class="buttons">
-        <button mat-raised-button primary>
-          {{button}}
-        </button>
-      </div>
-    </div>
-  </div>
 </mat-toolbar>
