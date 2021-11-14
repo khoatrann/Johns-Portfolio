@@ -1,0 +1,13 @@
+.mat-toolbar{
+    background-color: blueviolet;
+    color: white;
+}
+
+.header{
+    float:left;
+}
+
+.buttons{
+    float:right;
+    color:blueviolet;
+}
