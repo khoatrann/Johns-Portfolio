@@ -2,7 +2,9 @@
   <div class="header">{{title}}</div>
   <div class="button-box">
     <button [ngClass]="'button-item'" *ngFor="let button of buttons; let i = index;" mat-raised-button>
-      {{button}}
+      <a routerLink="home-component" routerLinkActive="active">{{button}}</a>
     </button>
   </div>
 </mat-toolbar>
+
+<router-outlet></router-outlet>
