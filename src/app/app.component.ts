@@ -6,4 +6,6 @@ import { Component } from '@angular/core';
 })  
 export class AppComponent {  
   title = 'John\'s Portfolio';  
+  buttons = ['Home','About','My Homies'];
+
 }  

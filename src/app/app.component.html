@@ -1,6 +1,10 @@
 <mat-toolbar>
-  <div class="Header">{{title}}</div>
-  <div class="Buttons">
-    <button mat-raised-button>Home</button>
+    <div class="Header">{{title}}</div>
+    <div class="header-box">
+    <div *ngFor="let button of buttons; let i = index" class="buttons">
+      <button mat-raised-button>
+        {{button}}  
+      </button>
+    </div>
   </div>
 </mat-toolbar>

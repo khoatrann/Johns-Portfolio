@@ -7,6 +7,10 @@
     float:left;
 }
 
+.header-box{
+    padding:80%;
+}
+
 .buttons{
     float:right;
     color:blueviolet;
