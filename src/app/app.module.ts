@@ -12,6 +12,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import { HomeComponent } from './home/home.component';
 import { AboutMeComponent } from './About-Me/about-me.component';
 import { MyHomiesComponent } from './my-homies/my-homies.component';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { MyHomiesComponent } from './my-homies/my-homies.component';
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
-    MatDividerModule
+    MatDividerModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
