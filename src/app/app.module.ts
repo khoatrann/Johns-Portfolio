@@ -13,6 +13,8 @@ import { HomeComponent } from './home/home.component';
 import { AboutMeComponent } from './About-Me/about-me.component';
 import { MyHomiesComponent } from './my-homies/my-homies.component';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { MatExpansionModule } from '@angular/material/expansion';
+
 
 
 @NgModule({
@@ -34,7 +36,8 @@ import { MatGridListModule } from '@angular/material/grid-list';
     MatButtonModule,
     MatIconModule,
     MatDividerModule,
-    MatGridListModule
+    MatGridListModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

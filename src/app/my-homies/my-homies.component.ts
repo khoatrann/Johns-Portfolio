@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+
 @Component({
     selector: 'app-my-homies',
     templateUrl: './my-homies.component.html',
@@ -6,6 +7,7 @@ import { Component } from '@angular/core';
 })
 
 export class MyHomiesComponent {
+    panelOpenState = false;
     constructor() {
     }
 }
