@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 export class AboutMeComponent {
     constructor() {
     }
+
+    counter(i: number) {
+        return new Array(i);
+    }
 }

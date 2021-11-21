@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 export class HomeComponent {
     constructor() {
     }
+
+    counter(i: number) {
+        return new Array(i);
+    }
 }
