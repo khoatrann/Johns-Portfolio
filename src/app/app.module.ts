@@ -14,7 +14,8 @@ import { AboutMeComponent } from './About-Me/about-me.component';
 import { MyHomiesComponent } from './my-homies/my-homies.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatExpansionModule } from '@angular/material/expansion';
-
+import { MatDialogModule } from '@angular/material/dialog';
+import { ModalComponent } from './modal/modal.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { MatExpansionModule } from '@angular/material/expansion';
     AppComponent,
     HomeComponent,
     AboutMeComponent,
-    MyHomiesComponent
+    MyHomiesComponent,
+    ModalComponent
   ],
   exports: [
 
@@ -37,7 +39,8 @@ import { MatExpansionModule } from '@angular/material/expansion';
     MatIconModule,
     MatDividerModule,
     MatGridListModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
