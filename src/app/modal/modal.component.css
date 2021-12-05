@@ -1,0 +1,19 @@
+.grid-card {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "item-a item-b item-c";
+    border: 1px solid gray;
+}
+
+.item-a {
+    justify-self: start;
+}
+
+.item-b {
+    justify-self: center;
+}
+
+.item-c {
+    justify-self: end;
+}

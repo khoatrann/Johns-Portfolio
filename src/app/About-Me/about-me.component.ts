@@ -13,14 +13,14 @@ export class AboutMeComponent {
     constructor(public matDialog: MatDialog) {
     }
 
-    openDialog(): void {
+    openDialog = () => {
         const dialogRef = this.matDialog.open(ModalComponent, {
             width: '700px',
             height: 'auto'
         })
     };
 
-    counter(i: number) {
+    counter = (i: number) => {
         return new Array(i);
     }
 }
