@@ -17,3 +17,9 @@
 .item-c {
     justify-self: end;
 }
+
+.left {
+    clear:both;
+    float:left;
+    margin-right:1%;
+}

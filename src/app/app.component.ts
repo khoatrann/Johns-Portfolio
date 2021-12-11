@@ -1,5 +1,4 @@
-import { Component, ContentChild } from '@angular/core';
-import { HomeComponent } from './home/home.component';
+import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

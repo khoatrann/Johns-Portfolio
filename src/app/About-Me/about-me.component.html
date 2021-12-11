@@ -1,7 +1,20 @@
 <div>
-    <mat-grid-list cols="1" rowHeight="4:1">
-        <mat-grid-tile>
-            My name is &nbsp; <button mat-raised-button (click)="openDialog()">John Nguyen</button>
-        </mat-grid-tile>
-    </mat-grid-list>
+    <div [ngStyle]="{'text-align':'center'}">
+        <mat-card><b>My Name is: <button mat-raised-button (click)="openDialog()">John Nguyen</button></b></mat-card>
+    </div>
+    <div>
+        <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+            <ng-container matColumnDef="name">
+                <th mat-header-cell *matHeaderCellDef> Name </th>
+                <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="details">
+                <th mat-header-cell *matHeaderCellDef> Details </th>
+                <td mat-cell *matCellDef="let element"> {{element.details}} </td>
+            </ng-container>
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+    </div>
 </div>

@@ -16,6 +16,10 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ModalComponent } from './modal/modal.component';
+import { MatCardModule } from '@angular/material/card';
+import { MatTableModule } from '@angular/material/table';
+
+
 
 
 @NgModule({
@@ -40,7 +44,9 @@ import { ModalComponent } from './modal/modal.component';
     MatDividerModule,
     MatGridListModule,
     MatExpansionModule,
-    MatDialogModule
+    MatDialogModule,
+    MatCardModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
