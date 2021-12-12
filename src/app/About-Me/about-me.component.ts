@@ -31,10 +31,10 @@ export class AboutMeComponent {
     gpaDisplayedColumns: string[] = ['value'];
     gpaObject: attributes[] = [
         {
-            value: '?'
+            value: '4.0'
         },
         {
-            value: '3.5 (cum louder)'
+            value: '3.5 (cum laude)'
         }
     ];
     gpaDataSource = new MatTableDataSource(this.gpaObject);

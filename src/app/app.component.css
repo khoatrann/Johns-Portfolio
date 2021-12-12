@@ -1,24 +1,23 @@
 .mat-toolbar{
-    padding: 4rem;
-    background-color: blueviolet;
-    color: white;
+  padding: 4rem;
+  background-image: url("./../assets/windowsxp.png");
+  background-size: cover;
+  color: white;
 }
 
 .header{
-    padding: 1rem;
-    font-size: 30px;
-    border: 1px solid lightblue;
-    border-radius: 12px;
+  color: white;
+  background-color: rgb(49, 84, 179);
+  padding: 1rem;
+  font-size: 30px;
+  border: 1px solid rgb(49, 84, 179);
+  border-radius: 12px;
 }
 
 .header-box{
-    padding: 80%;
+  padding: 80%;
 }
 
-.buttons{
-    float:right;
-    color:blueviolet;
-}
 section {
   display: table;
 }
@@ -36,7 +35,8 @@ section {
 }
 
 .button-item {
-    color: blueviolet;
-    float: right;
-    margin: 2px;
+  color: white;
+  background-color: rgb(49, 84, 179);
+  float: right;
+  margin: 2px;
 }

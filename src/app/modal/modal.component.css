@@ -1,25 +1,31 @@
 .grid-card {
     display: grid;
+    grid-template-columns: 100px 100px;
     grid-template-rows: auto;
     grid-template-areas: 
-    "item-a item-b item-c";
+    ". . . ."
+    "pfp pfp detail detail"
+    ". . . .";
     border: 1px solid gray;
+    background-color: grey;
 }
 
-.item-a {
-    justify-self: start;
+.pfp {
+    grid-area: pfp;
 }
 
-.item-b {
-    justify-self: center;
+.detail {
+    grid-area: detail;
 }
 
-.item-c {
-    justify-self: end;
+.pfp-img {
+    width: 70%;
+    height: auto;
+    margin: 2px;
+    padding: 2px;
+    border: 1px solid white;
 }
 
-.left {
-    clear:both;
-    float:left;
-    margin-right:1%;
+.detail-text {
+    color: white;
 }
