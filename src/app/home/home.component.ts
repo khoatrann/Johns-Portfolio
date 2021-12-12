@@ -6,10 +6,15 @@ import { Component } from '@angular/core';
 })
 
 export class HomeComponent {
+    memeIsOn = false;
     constructor() {
     }
 
     counter(i: number) {
         return new Array(i);
+    }
+
+    memeToggle(): void {
+        this.memeIsOn = !this.memeIsOn;
     }
 }

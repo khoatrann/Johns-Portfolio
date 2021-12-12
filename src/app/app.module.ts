@@ -18,7 +18,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { ModalComponent } from './modal/modal.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatTableModule } from '@angular/material/table';
-
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 
 
@@ -46,7 +46,8 @@ import { MatTableModule } from '@angular/material/table';
     MatExpansionModule,
     MatDialogModule,
     MatCardModule,
-    MatTableModule
+    MatTableModule,
+    MatSlideToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

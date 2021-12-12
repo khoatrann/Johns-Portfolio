@@ -1,5 +1,8 @@
 <div>
-    <mat-grid-list cols="10" rowHeight="1:1">
+    <mat-slide-toggle (click)="memeToggle()">
+        Memes
+    </mat-slide-toggle>
+    <mat-grid-list cols="10" rowHeight="1:1" *ngIf="memeIsOn">
         <mat-grid-tile *ngFor="let in of counter(5); let i = index">
             <iframe src="../../assets/doge2.gif" width=" 300" height="300" frameBorder="0" class="giphy-embed"
                 allowFullScreen></iframe>
@@ -28,4 +31,7 @@
             <img class="fit" src="../../assets/nickyoungmib.jpg" alt="Italian Trulli">
         </mat-grid-tile>
     </mat-grid-list>
+    <div *ngIf="!memeIsOn">
+        Welcome to My Portfolio :)
+    </div>
 </div>
