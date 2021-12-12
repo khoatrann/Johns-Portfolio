@@ -5,9 +5,9 @@
     grid-template-areas: 
     ". . . ."
     "pfp pfp detail detail"
-    ". . . .";
+    "sig . . .";
     border: 1px solid gray;
-    background-color: grey;
+    background-color: white;
 }
 
 .pfp {
@@ -18,14 +18,18 @@
     grid-area: detail;
 }
 
+.sig {
+    grid-area: sig;
+}
+
 .pfp-img {
-    width: 70%;
+    width: 80%;
     height: auto;
     margin: 2px;
     padding: 2px;
-    border: 1px solid white;
+    border: 2px solid grey;
 }
 
 .detail-text {
-    color: white;
+    color: black;
 }
