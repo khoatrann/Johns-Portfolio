@@ -10,6 +10,10 @@
     background-color: white;
 }
 
+.grid-card:after {
+    opacity: 0.5;
+}
+
 .pfp {
     grid-area: pfp;
 }

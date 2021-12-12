@@ -15,6 +15,17 @@
             </table>
         </div>
         <div class="item-same-line">
+            <table mat-table [dataSource]="majorDataSource" class="">
+                <ng-container matColumnDef="value">
+                    <th class="table-header" mat-header-cell *matHeaderCellDef> Major
+                    </th>
+                    <td mat-cell *matCellDef="let element"> {{element.value}} </td>
+                </ng-container>
+                <tr mat-header-row *matHeaderRowDef="majorDisplayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: majorDisplayedColumns;"></tr>
+            </table>
+        </div>
+        <div class="item-same-line">
             <table mat-table [dataSource]="gpaDataSource" class="">
                 <ng-container matColumnDef="value">
                     <th class="table-header" mat-header-cell *matHeaderCellDef> GPA

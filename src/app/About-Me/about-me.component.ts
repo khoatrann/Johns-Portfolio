@@ -28,6 +28,21 @@ export class AboutMeComponent {
     ];
     educationDataSource = new MatTableDataSource(this.educationObject);
 
+    // ---------------------------------------------------------------------------
+
+    majorDisplayedColumns: string[] = ['value'];
+    majorObject: attributes[] = [
+        {
+            value: 'MIS'
+        },
+        {
+            value: 'Business'
+        }
+    ];
+    majorDataSource = new MatTableDataSource(this.majorObject);
+
+    // ---------------------------------------------------------------------------
+
     gpaDisplayedColumns: string[] = ['value'];
     gpaObject: attributes[] = [
         {
@@ -38,6 +53,8 @@ export class AboutMeComponent {
         }
     ];
     gpaDataSource = new MatTableDataSource(this.gpaObject);
+
+    // ---------------------------------------------------------------------------
 
     jobDisplayedColumns: string[] = ['value'];
     jobObject: attributes[] = [
@@ -59,6 +76,8 @@ export class AboutMeComponent {
     ];
     jobDataSource = new MatTableDataSource(this.jobObject);
 
+    // ---------------------------------------------------------------------------
+
     skillsDisplayedColumns: string[] = ['value'];
     skillsObject: attributes[] = [
         {
@@ -69,6 +88,8 @@ export class AboutMeComponent {
         }
     ];
     skillsDataSource = new MatTableDataSource(this.skillsObject);
+
+    // ---------------------------------------------------------------------------
 
 
     constructor(public matDialog: MatDialog) {
